@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
     version: "0.1-beta"
   });
 });
-app.get('/messages',async (req,res) =>{
+app.get('/messages',async (reg,res) =>{
   let messages = await message.find({});
   res.json(messages);
 });
